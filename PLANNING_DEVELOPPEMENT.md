@@ -21,12 +21,12 @@ Application Flutter de gestion de pressing avec :
 
 ### 1.2 Modèles de données
 
-- [ ] Modèle `Client` (id, nom, téléphone, email, historique)
-- [ ] Modèle `Article` (id, nom, catégorie, prix, code interne, image)
-- [ ] Modèle `Commande` (id, numéro, client, date dépôt, date retrait, statut, total)
-- [ ] Modèle `LigneCommande` (article, quantité, prix, remarques/réserves)
-- [ ] Modèle `Paiement` (id, commande, montant, date, mode)
-- [ ] Modèle `Parametres` (couleur du jour, configuration impression, etc.)
+- [x] Modèle `Client` (id, nom, téléphone, email, historique)
+- [x] Modèle `Article` (id, nom, catégorie, prix, code interne, image)
+- [x] Modèle `Commande` (id, numéro, client, date dépôt, date retrait, statut, total)
+- [x] Modèle `LigneCommande` (article, quantité, prix, remarques/réserves)
+- [x] Modèle `Paiement` (id, commande, montant, date, mode)
+- [x] Modèle `Parametres` (couleur du jour, configuration impression, etc.)
 
 ### 1.3 Base de données locale
 
