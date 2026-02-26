@@ -1,0 +1,57 @@
+CAHIER DES CHARGES – LOGICIEL DE GESTION PRESSING
+Objectif : Développer un logiciel de gestion de pressing haut de gamme, inspiré du fonctionnement du logiciel Sequoia observé, intégrant gestion client, gestion articles, impression automatique (marquage + facture), suivi production et encaissement.
+1. Interface principale (Écran dépôt)
+L’écran principal doit comprendre :
+- Identification client (nom, téléphone, historique)
+- Création nouveau dépôt
+- Sélection rapide des articles via grille visuelle (avec icônes)
+- Affichage prix unitaire TTC
+- Calcul automatique total TTC
+- Gestion quantité par article
+- Clavier tactile numérique et alphabétique intégré
+- Gestion date dépôt et date prévue de retrait
+2. Gestion des articles
+- Catégories : vêtements, ameublement, cuir, blanchisserie, etc.
+- Articles configurables (prix, code interne, image)
+- Ajout remarques : tache, sans garantie, lavage spécial
+- Gestion couleur du jour (marquage couleur différente chaque jour)
+3. Module impression automatique
+Le logiciel doit piloter deux imprimantes thermiques :
+A. Imprimante 58mm – Marquage vêtements (Auto Cutter)
+Fonctionnement :
+- Impression automatique ticket couleur du jour
+- Impression individuelle par article
+- Coupe automatique après chaque article
+- Contenu ticket : Numéro commande, date, article, prix, remarques, code interne
+B. Imprimante 80mm – Facture client (Auto Cutter)
+Fonctionnement :
+- Impression facture complète
+- Impression duplicata automatique
+- Logo pressing
+- Détail articles
+- Total TTC
+- TVA détaillée
+- Conditions générales en bas de ticket
+4. Gestion production
+- Statuts : En cours / Prêt / Livré
+- Écran suivi commandes avec filtre par date
+- Visualisation articles prêts
+- Bon de livraison valorisé / non valorisé
+5. Encaissement
+- Gestion paiement partiel ou total
+- Affichage reste dû
+- Mode B2B activable/désactivable
+- Historique encaissement journalier
+6. Gestion base de données
+- Base clients avec historique complet
+- Numérotation automatique des commandes
+- Sauvegarde automatique quotidienne
+- Export comptable possible (Excel/PDF)
+7. Exigences techniques
+- Compatible Windows POS
+- Compatible imprimantes ESC/POS
+- Gestion auto-cutter via commande logicielle
+- Interface tactile optimisée
+- Architecture évolutive (multi-boutiques possible)
+Conclusion
+Le logiciel doit être rapide, intuitif, orienté productivité, et automatiser au maximum le processus dépôt → marquage → production → livraison → encaissement, avec un système d’impression entièrement automatisé.

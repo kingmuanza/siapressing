@@ -1,0 +1,19 @@
+CAHIER DES CHARGES - LOGICIEL PRESSING
+1. Architecture Générale du Système
+Le logiciel doit gérer deux imprimantes distinctes : - Imprimante 58mm (marquage vêtements) avec auto-cutter. - Imprimante 80mm (factures + duplicata) avec auto-cutter. Les deux imprimantes doivent être compatibles ESC/POS.
+2. Impression Marquage 58mm (Auto-Cutter)
+Lorsqu'une commande est validée, le système doit : - Calculer le nombre total de tickets (articles + éventuels tickets réserves). - Imprimer un ticket par article. - Envoyer une commande ESC/POS CUT après chaque impression.
+Contenu obligatoire d’un ticket article :
+- Numéro de commande - Date de dépôt (Pris le ...) - Index du ticket (ex: 3/9) - Date et heure de retrait - Compte ou référence client - Nom de l'article - Prix de l'article - Type de prestation (Nettoyage / Lavage)
+Gestion des Réserves :
+Le système doit permettre : - Impression d’un ticket séparé pour chaque réserve (ex: SANS GARANTIE, TACHE) OU - Intégration des réserves dans le ticket article.
+Ticket Couleur du Jour :
+Au premier dépôt de la journée, le système doit imprimer automatiquement : - Mention COULEUR DU JOUR - Couleur sélectionnée - Date
+3. Impression Facture 80mm (Auto-Cutter)
+Après validation de la commande, le logiciel doit : 1) Imprimer la facture complète. 2) Envoyer la commande CUT. 3) Imprimer automatiquement un duplicata. 4) Envoyer la commande CUT.
+Contenu obligatoire de la facture :
+- Nom du pressing - Adresse - Téléphone - Email - Numéro de commande - Code-barres du numéro de commande - Date dépôt - Date retrait - Nom client - Téléphone client - Liste détaillée des articles (quantité + prix) - Section articles avec réserves - Section prestations - Total TTC - Détail TVA (Taux, Base HT, Montant) - Mentions légales - Horaires d'ouverture
+Duplicata :
+Le duplicata doit contenir les mêmes informations que la facture avec la mention visible 'DUPLICATA'.
+4. Paramètres Configurables
+- Gestion longueur ticket - Gestion police - Activation/désactivation duplicata automatique - Gestion couleur du jour - Réimpression ticket individuel - Réimpression facture - Gestion multi-comptoir - Sauvegarde cloud
